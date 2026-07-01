@@ -221,7 +221,7 @@ h3.sub-title{
 .profile-wrap{
   position: relative;
   background-color: var(--parchment);
-  background-image: url('img/altimetria-fondo.png');
+  background-image: url('img/altimetria-fondo.webp');
   background-size: cover;
   background-position: center;
   border-radius: 16px;
@@ -260,7 +260,7 @@ h3.sub-title{
 /* ---------- CAMINO DEL HÉROE (barra de progreso) ---------- */
 .camino-progreso{
   position: relative;
-  height: 64px;
+  height: 72px;
   margin-bottom: 16px;
   background-color: #c4955a;
   border-radius: 10px;
@@ -271,63 +271,66 @@ h3.sub-title{
   width: 100%; height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  filter: brightness(0.82) contrast(0.9);
 }
 .nodo-hito{
   position: absolute;
-  width: 14px; height: 22px;
+  width: 26px; height: 40px;
   object-fit: contain;
   transform: translateX(-50%);
   top: 50%;
-  margin-top: -11px;
+  margin-top: -20px;
   z-index: 2;
-  background: transparent;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
 }
 .camino-trofeo{
   position: absolute;
   right: 4px;
-  width: 46px; height: 46px;
+  width: 56px; height: 56px;
   object-fit: contain;
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
-  background: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
 }
 .camino-casco{
   position: absolute;
-  width: 34px; height: 34px;
+  width: 52px; height: 52px;
   object-fit: contain;
   top: 50%;
-  transform: translate(-50%, -65%);
+  transform: translate(-50%, -60%);
   transition: left 0.5s cubic-bezier(.34,1.56,.64,1);
   z-index: 4;
-  background: transparent;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,0.5));
 }
 
 /* ---------- MISIONES DEL HÉROE ---------- */
-.mission-list{ display:flex; flex-direction:column; gap: 10px; }
+.mission-list{ display:flex; flex-direction:column; gap: 8px; }
 .mission{
   display:flex;
-  align-items:flex-start;
-  gap: 12px;
+  align-items:center;
+  gap: 14px;
   background-color: #ecdcaa;
   background-image: url('img/tarjeta-mision.png');
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-  padding: 13px 14px;
+  padding: 14px 16px;
   cursor:pointer;
   transition: transform .1s;
   user-select:none;
   border: none;
-  box-shadow: inset 0 0 0 1px rgba(176,138,66,0.3);
+  box-shadow: none;
+  overflow: hidden;
 }
 .mission:active{ transform: scale(0.98); }
-.mission.done{ filter: brightness(0.95); }
+.mission.done{ filter: brightness(0.92); }
 
 img.mission-check{
-  width: 32px; height: 32px;
+  width: 52px; height: 52px;
   object-fit: contain;
   flex-shrink:0;
-  margin-top: 1px;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
 }
 .mission.done img.mission-check{
   animation: checkActivado .4s cubic-bezier(.34,1.56,.64,1);
@@ -337,14 +340,25 @@ img.mission-check{
   to{ transform: scale(1); opacity:1; }
 }
 .mission-text .mtitle{
-  font-family: 'Cinzel Decorative', serif;
-  font-weight: 400;
-  font-size: 12.5px;
-  color: var(--ink);
-  margin-bottom: 4px;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 13.5px;
+  color: var(--red-dark);
+  margin-bottom: 3px;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
-.mission.done .mission-text .mtitle{ color: var(--red-dark); }
-.mission-text p{ margin:0; font-size: 13px; line-height:1.45; color: var(--ink-soft); }
+.mission.done .mission-text .mtitle{
+  color: var(--leather);
+  text-decoration: line-through;
+  text-decoration-color: rgba(107,31,16,0.5);
+}
+.mission-text p{
+  margin:0;
+  font-size: 13px;
+  line-height:1.45;
+  color: var(--ink);
+  font-weight: 600;
+}
 
 /* ---------- RECOMPENSA ---------- */
 .reward-box{
