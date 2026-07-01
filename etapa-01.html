@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etapa 1 · Roncesvalles → Pamplona · Camino Templario</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ================= BANNER ================= -->
+  <div class="banner">
+    <button class="info-badge" id="btnPadre" aria-label="Cuaderno del padre">
+      <img src="img/badge-templarios.webp" alt="Información técnica">
+    </button>
+    <p class="eyebrow">Camino Templario · Etapa 1 de 15</p>
+    <h1>Roncesvalles → Pamplona</h1>
+    <p class="subtitle">El primer paso del joven templario por Navarra</p>
+  </div>
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <div class="panel">
+
+    <div class="narrative-row">
+      <img class="julen-img" src="img/julen/julen-aventurero.webp" alt="Julen Aventurero">
+      <div class="narrative-text-block">
+        <p id="narrativeText"></p>
+      </div>
+    </div>
+
+    <div class="profile-wrap" id="profileWrap">
+      <svg viewBox="0 0 380 190" id="profileSvg" role="img" xmlns="http://www.w3.org/2000/svg">
+        <title>Perfil de altimetría real de la etapa 1, de Roncesvalles a Pamplona</title>
+        <path d="M340.0,49.4 L338.7,50.5 L335.2,53.0 L332.3,55.1 L328.2,56.8 L326.5,58.2 L323.3,59.2 L317.2,62.8 L315.3,62.7 L313.6,62.3 L311.4,62.3 L307.0,62.4 L304.3,60.0 L303.4,61.0 L301.2,53.7 L297.2,62.4 L294.2,63.9 L290.7,62.8 L287.5,56.3 L285.3,50.6 L282.7,50.4 L280.7,54.4 L279.9,57.5 L275.4,66.3 L273.7,71.3 L273.0,73.2 L270.4,71.4 L268.6,75.1 L267.4,79.5 L265.8,84.7 L264.0,83.2 L261.5,79.1 L259.0,80.2 L257.6,79.7 L251.8,84.6 L251.3,84.8 L246.9,87.5 L245.5,88.2 L242.8,80.8 L241.1,75.5 L239.9,70.8 L238.7,69.9 L237.1,68.3 L235.7,67.3 L234.0,69.6 L231.0,71.7 L227.9,71.5 L226.4,72.0 L223.2,72.4 L221.8,68.5 L218.5,68.8 L216.2,72.4 L214.0,73.7 L212.2,76.4 L210.8,79.5 L207.1,79.8 L204.5,84.5 L203.5,87.7 L201.6,92.1 L200.4,95.8 L197.5,103.2 L194.3,104.0 L192.3,111.9 L190.6,118.8 L189.3,121.7 L187.8,123.9 L186.7,122.9 L185.2,122.5 L183.0,123.3 L181.6,122.1 L179.7,123.7 L176.3,118.6 L173.5,114.6 L171.7,118.4 L170.4,122.6 L168.8,123.5 L167.7,119.0 L165.7,119.9 L162.0,121.9 L161.2,122.2 L158.9,123.3 L158.0,123.7 L153.9,125.0 L152.9,125.6 L150.3,126.6 L149.0,127.6 L148.3,128.2 L146.6,127.4 L144.6,123.5 L143.4,122.9 L141.5,123.4 L139.7,124.4 L138.3,126.3 L137.6,125.9 L134.5,122.8 L132.4,124.2 L131.9,126.0 L128.8,129.3 L127.7,129.2 L124.6,130.0 L122.9,130.4 L120.5,130.9 L116.0,130.2 L115.3,130.4 L112.8,131.3 L110.5,130.3 L109.2,128.5 L106.7,130.3 L105.7,130.5 L103.8,131.2 L103.0,132.7 L100.2,132.7 L99.0,132.7 L97.3,133.4 L94.6,134.2 L93.6,138.7 L91.9,127.7 L90.5,130.8 L89.3,132.2 L86.3,132.2 L85.3,131.4 L83.8,131.1 L82.1,130.5 L80.6,130.9 L75.9,129.0 L73.9,133.6 L71.2,137.2 L67.8,137.7 L66.1,137.8 L57.9,139.5 L57.1,139.7 L54.8,139.9 L49.7,140.4 L47.3,140.1 L46.0,140.2 L45.2,139.9 L43.5,136.2 L42.9,135.3 L41.1,135.3 L40.0,134.3" fill="none" stroke="#D85A30" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p class="profile-hint">👆 Toca un punto del camino para descubrir su secreto</p>
+
+    <h2 class="section-title">🛡️ Misiones del héroe</h2>
+
+    <!-- CAMINO DEL HÉROE: barra de progreso -->
+    <div class="camino-progreso" id="caminoProgreso">
+      <img class="camino-track" src="img/camino-track.webp" alt="Sendero">
+      <img class="nodo-hito" style="left:10%" src="img/nodo-hito.webp" alt="">
+      <img class="nodo-hito" style="left:27%" src="img/nodo-hito.webp" alt="">
+      <img class="nodo-hito" style="left:44%" src="img/nodo-hito.webp" alt="">
+      <img class="nodo-hito" style="left:61%" src="img/nodo-hito.webp" alt="">
+      <img class="nodo-hito" style="left:78%" src="img/nodo-hito.webp" alt="">
+      <img class="camino-trofeo" src="img/barra-trofeo.webp" alt="Meta">
+      <img class="camino-casco" id="caminoCasco" src="img/barra-casco.webp" alt="Progreso">
+    </div>
+
+    <div class="mission-list" id="missionList">
+      <div class="mission" data-mission="silo">
+        <img class="mission-check" src="img/check-inactivo.webp" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El secreto del Silo de Carlomagno</div>
+          <p>Encuentra el Silo de Carlomagno en Roncesvalles y hazte una foto junto a él antes de salir.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="puente">
+        <img class="mission-check" src="img/check-inactivo.webp" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El guardián del Puente de la Rabia</div>
+          <p>Cruza el puente de Zubiri y cuéntale a tu padre la leyenda de Santa Quiteria.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="indurain">
+        <img class="mission-check" src="img/check-inactivo.webp" alt="">
+        <div class="mission-text">
+          <div class="mtitle">Tras las ruedas del campeón</div>
+          <p>Localiza en Villava algún recuerdo dedicado a Miguel Induráin.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="bosque">
+        <img class="mission-check" src="img/check-inactivo.webp" alt="">
+        <div class="mission-text">
+          <div class="mtitle">Centinela del bosque</div>
+          <p>Identifica tres árboles distintos en el tramo del Alto de Erro: haya, roble y pino.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="ciudadela">
+        <img class="mission-check" src="img/check-inactivo.webp" alt="">
+        <div class="mission-text">
+          <div class="mtitle">Las puertas de la ciudad</div>
+          <p>Entra en Pamplona atravesando la Ciudadela hasta llegar al Casco Viejo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reward-box" id="rewardBox">
+      <div class="reward-icon">🏆</div>
+      <div>
+        <h3>Recompensa de la jornada</h3>
+        <p>Al llegar a Pamplona: garroticos de Beatriz o chandríos en el Casco Viejo — o, si el templario prefiere algo más fresco, merienda en McDonald's. ¡Tú eliges, héroe!</p>
+      </div>
+    </div>
+
+    <div class="credential-strip">
+      <p class="ctitle">Credencial de Templario · Sellos de esta etapa</p>
+      <div class="seal-row" id="sealRow">
+        <div class="seal" data-mission="silo" data-tipo="cruz">
+          <img src="img/sellos/sello-cruz-inactivo.webp" alt="Sello Cruz">
+        </div>
+        <div class="seal" data-mission="puente" data-tipo="concha">
+          <img src="img/sellos/sello-concha-inactivo.webp" alt="Sello Concha">
+        </div>
+        <div class="seal" data-mission="indurain" data-tipo="espada">
+          <img src="img/sellos/sello-espada-inactivo.webp" alt="Sello Espada">
+        </div>
+        <div class="seal" data-mission="bosque" data-tipo="escudo">
+          <img src="img/sellos/sello-escudo-inactivo.webp" alt="Sello Escudo">
+        </div>
+        <div class="seal" data-mission="ciudadela" data-tipo="castillo">
+          <img src="img/sellos/sello-castillo-inactivo.webp" alt="Sello Castillo">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="page-footer">Camino Templario · Roncesvalles — Santiago de Compostela</footer>
+</div>
+
+<!-- ================= DRAWER IZQUIERDO: cuaderno del padre ================= -->
+<div class="drawer-backdrop" id="backdropPadre"></div>
+<div class="drawer drawer-left" id="drawerPadre">
+  <button class="drawer-close" id="closePadre">✕</button>
+  <h2 class="section-title">📋 Datos técnicos de la etapa</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><span class="value">49 km</span><span class="label">Distancia</span></div>
+    <div class="stat-card"><span class="value">+487 m</span><span class="label">Desnivel +</span></div>
+    <div class="stat-card"><span class="value">2/5</span><span class="label">Dificultad</span></div>
+  </div>
+  <div class="info-block">
+    Etapa de carácter descendente en su conjunto, pero con <strong>tres rampas exigentes</strong> al inicio (Alto de Mezkíritz y Alto de Erro) antes de entrar en terreno de bosque. A partir de Zubiri el camino discurre junto al río Arga, prácticamente llano y muy cómodo hasta Pamplona.
+  </div>
+  <div class="warning-box">
+    <div class="wtitle">⚠️ Aviso de seguridad — Bajada del Alto de Erro</div>
+    El descenso original hacia Zubiri (sendero/trialera) está muy deteriorado, con piedra suelta y peldaños irregulares: <strong>no recomendable con el niño</strong>. Tomar la <strong>alternativa por la carretera N-135</strong>, bajada asfaltada y mucho más segura hasta Zubiri.
+  </div>
+  <h3 class="sub-title">Puntos de paso</h3>
+  <ul class="waypoint-list">
+    <li><span class="waypoint-km">0 km</span> Roncesvalles — salida desde la Colegiata.</li>
+    <li><span class="waypoint-km">3 km</span> Burguete — pueblo llano, buen calentamiento.</li>
+    <li><span class="waypoint-km">6 km</span> Espinal — última fuente antes de las rampas.</li>
+    <li><span class="waypoint-km">12 km</span> Alto de Mezkíritz — primer puerto, corto pero duro.</li>
+    <li><span class="waypoint-km">17 km</span> Alto de Erro — punto más alto. Bajar por N-135.</li>
+    <li><span class="waypoint-km">22 km</span> Zubiri — Puente de la Rabia, cruce del río Arga.</li>
+    <li><span class="waypoint-km">27 km</span> Larrasoaña / Akerreta — tramo llano junto al río.</li>
+    <li><span class="waypoint-km">40 km</span> Trinidad de Arre — puente medieval, entrada urbana.</li>
+    <li><span class="waypoint-km">42 km</span> Villava — cuna de Miguel Induráin.</li>
+    <li><span class="waypoint-km">49 km</span> Pamplona — entrada por la Ciudadela al Casco Viejo.</li>
+  </ul>
+  <h3 class="sub-title">Logística del día</h3>
+  <table class="logistics-table">
+    <tr><td>Salida</td><td>Roncesvalles, 7:30–8:00 h</td></tr>
+    <tr><td>Llegada prevista</td><td>Pamplona, 13:00–14:00 h</td></tr>
+    <tr><td>Avituallamiento</td><td>Burguete, Espinal, Zubiri y Trinidad de Arre</td></tr>
+    <tr><td>Tramo exigente</td><td>km 6–17 (Mezkíritz + Erro), resto cómodo</td></tr>
+    <tr><td>Alojamiento</td><td>Pamplona, Casco Viejo — confirmar guardia de bicis</td></tr>
+  </table>
+</div>
+
+<!-- ================= DRAWER DERECHO: punto de interés ================= -->
+<div class="drawer-backdrop" id="backdropPunto"></div>
+<div class="drawer drawer-right" id="drawerPunto">
+  <button class="drawer-close" id="closePunto">✕</button>
+  <div class="drawer-hero">
+    <img id="drawerImg" src="" alt="">
+    <div class="dtitle" id="drawerTitle"></div>
+    <div class="dkm" id="drawerKm"></div>
+  </div>
+  <p class="drawer-text" id="drawerText"></p>
+</div>
+
+<script>
+  const PUNTOS_INTERES = [
+    { id:"roncesvalles", x:340.0, y:49.4, km:"Km 0", titulo:"Roncesvalles", tipo:"guardian",
+      texto:"Aquí empieza tu Camino, escudero Julen, justo donde hace más de mil años se libró una batalla legendaria entre caballeros. Antes de subir a la bici, este lugar tiene mucho que enseñarte: la Colegiata, sus tejados puntiagudos y un secreto de piedra escondido muy cerca.<br><br><strong>Tu misión aquí:</strong> busca el Silo de Carlomagno, el monumento que recuerda a los guerreros caídos en aquella batalla, y hazte una foto junto a él antes de salir." },
+    { id:"mezkiritz", x:285, y:50.6, km:"Km 9", titulo:"Alto de Mezkíritz", tipo:"aventurero",
+      texto:"Justo después de salir empieza tu primer desafío del Camino: una subida corta donde pondrás a prueba tus piernas de templario. No hay prisa, Julen — marca tu propio ritmo, respira y disfruta del paisaje que se abre a tu alrededor.<br><br>Cuando llegues arriba, date la vuelta un momento: desde aquí ya puedes ver lo lejos que has llegado. Ese es tu primer trofeo del día, aunque no lleve sello." },
+    { id:"erro", x:236, y:68, km:"Km 17", titulo:"Alto de Erro", tipo:"aventurero",
+      texto:"Vas a atravesar uno de los bosques más bonitos de Navarra, lleno de hayas, robles y pinos centenarios. Es el reino de jabalíes, corzos y pájaros carpinteros, aunque a esta hora de la mañana lo normal es que estén escondidos entre los árboles.<br><br><strong>Tu misión aquí:</strong> conviértete en centinela del bosque y descubre tres árboles distintos a tu paso — una haya, un roble y un pino. Fíjate bien en sus hojas y su corteza, joven templario." },
+    { id:"zubiri", x:187.8, y:123.9, km:"Km 25", titulo:"Puente de la Rabia", tipo:"narrador",
+      texto:"Este puente tiene casi 900 años y guarda un secreto que pocos conocen. Cuentan que, durante su construcción, se encontraron los restos de Santa Quiteria, protectora de los animales, y que desde entonces cualquier animal que diera tres vueltas alrededor de su pilar central quedaba curado para siempre.<br><br><strong>Tu misión aquí:</strong> cruza el Puente de la Rabia y cuéntale esta leyenda a tu padre antes de seguir camino. Eres tú quien guarda ahora esta historia, escudero Julen." },
+    { id:"villava", x:94.6, y:134.2, km:"Km 40", titulo:"Villava", tipo:"aventurero",
+      texto:"En este pueblo nació uno de los ciclistas más grandes de la historia: Miguel Induráin, capaz de ganar el Tour de Francia cinco veces seguidas. Hoy pedaleas por las mismas calles donde él aprendió a montar en bici, mucho antes de convertirse en leyenda.<br><br><strong>Tu misión aquí:</strong> busca en Villava algún recuerdo dedicado a Induráin — una placa, una plaza, una estatua. Quién sabe, Julen, quizás tú también dejes tu huella en una bici algún día." },
+    { id:"pamplona", x:40.0, y:134.3, km:"Km 49", titulo:"Pamplona", tipo:"guardian",
+      texto:"Entrarás a la ciudad atravesando la Ciudadela, una antigua fortaleza con forma de estrella construida hace siglos para defender Pamplona. Detrás de sus murallas te espera el Casco Viejo, con calles estrechas, plazas llenas de historia y el final de tu primera etapa.<br><br><strong>Tu misión aquí:</strong> entra en la ciudad atravesando la Ciudadela hasta llegar al Casco Viejo. Has completado tu primera jornada como templario del Camino — ¡enhorabuena, escudero!" }
+  ];
+
+  const JULEN_FULL = {
+    aventurero:"img/julen/julen-aventurero.webp",
+    narrador:"img/julen/julen-narrador.webp",
+    guardian:"img/julen/julen-guardian.webp"
+  };
+  const JULEN_CARA = {
+    aventurero:"img/julen/julen-aventurero-cara.webp",
+    narrador:"img/julen/julen-narrador-cara.webp",
+    guardian:"img/julen/julen-guardian-cara.webp"
+  };
+
+  // --- Hotspots sobre el perfil ---
+  const profileWrap = document.getElementById('profileWrap');
+  PUNTOS_INTERES.forEach(p => {
+    const btn = document.createElement('button');
+    btn.className = 'hotspot tipo-' + p.tipo;
+    btn.style.left = (p.x / 380 * 100) + '%';
+    btn.style.top  = (p.y / 190 * 100) + '%';
+    btn.setAttribute('aria-label', p.titulo);
+    btn.innerHTML = '<img src="' + JULEN_CARA[p.tipo] + '" alt="">';
+    btn.addEventListener('click', () => abrirDrawerPunto(p));
+    profileWrap.appendChild(btn);
+  });
+
+  // --- Escalas y cuadrícula del perfil ---
+  (function dibujarEscalas(){
+    const ns = "http://www.w3.org/2000/svg";
+    const svgEl = document.getElementById('profileSvg');
+    const g = document.createElementNS(ns, 'g');
+    svgEl.insertBefore(g, svgEl.firstChild);
+    const xDeKm  = km  => 340 - (km / 49) * 300;
+    const yDeAlt = alt => 49.4 + (950 - alt) * 84.9 / 490;
+    const yBase = 148, yTop = 44;
+    for (let km = 5; km < 49; km += 5){
+      const x = xDeKm(km), l = document.createElementNS(ns, 'line');
+      l.setAttribute('x1',x); l.setAttribute('y1',yTop);
+      l.setAttribute('x2',x); l.setAttribute('y2',yBase);
+      l.setAttribute('stroke','#2c241c'); l.setAttribute('stroke-width','0.5'); l.setAttribute('stroke-opacity','0.12');
+      g.appendChild(l);
+    }
+    const axisH = document.createElementNS(ns,'line');
+    axisH.setAttribute('x1',40); axisH.setAttribute('y1',yBase); axisH.setAttribute('x2',340); axisH.setAttribute('y2',yBase);
+    axisH.setAttribute('stroke','#2c241c'); axisH.setAttribute('stroke-width','0.5'); axisH.setAttribute('stroke-opacity','0.2');
+    g.appendChild(axisH);
+    [0,10,20,30,40,49].forEach(km => {
+      const x = xDeKm(km);
+      const tick = document.createElementNS(ns,'line');
+      tick.setAttribute('x1',x); tick.setAttribute('y1',yBase); tick.setAttribute('x2',x); tick.setAttribute('y2',yBase+3);
+      tick.setAttribute('stroke','#6b5d4c'); tick.setAttribute('stroke-width','0.7'); g.appendChild(tick);
+      const t = document.createElementNS(ns,'text');
+      t.setAttribute('x',x); t.setAttribute('y',yBase+10); t.setAttribute('text-anchor','middle');
+      t.setAttribute('font-family','Baloo 2, sans-serif'); t.setAttribute('font-size','8'); t.setAttribute('fill','#6b5d4c');
+      t.textContent = km+'km'; g.appendChild(t);
+    });
+    [500,600,700,800,900].forEach(alt => {
+      const y = yDeAlt(alt);
+      const tick = document.createElementNS(ns,'line');
+      tick.setAttribute('x1',38); tick.setAttribute('y1',y); tick.setAttribute('x2',40); tick.setAttribute('y2',y);
+      tick.setAttribute('stroke','#6b5d4c'); tick.setAttribute('stroke-width','0.7'); g.appendChild(tick);
+      const t = document.createElementNS(ns,'text');
+      t.setAttribute('x',36); t.setAttribute('y',y+3); t.setAttribute('text-anchor','end');
+      t.setAttribute('font-family','Baloo 2, sans-serif'); t.setAttribute('font-size','7.5'); t.setAttribute('fill','#6b5d4c');
+      t.textContent = alt+'m'; g.appendChild(t);
+    });
+  })();
+
+  // --- Efecto máquina de escribir ---
+  function escribirTexto(el, html, duracionMs){
+    const tokens=[], len=html.length; let i=0;
+    while(i<len){ if(html[i]==='<'){const fin=html.indexOf('>',i); tokens.push({tipo:'tag',valor:html.slice(i,fin+1)}); i=fin+1;} else{tokens.push({tipo:'char',valor:html[i]}); i++;} }
+    const totalChars=tokens.filter(t=>t.tipo==='char').length;
+    const intervalo=totalChars>0?duracionMs/totalChars:0;
+    let salida='', idx=0;
+    el.innerHTML='<span class="typing-cursor"></span>';
+    function paso(){
+      while(idx<tokens.length){ const t=tokens[idx]; salida+=t.valor; idx++;
+        if(t.tipo==='char'){ el.innerHTML=salida+'<span class="typing-cursor"></span>'; if(idx<tokens.length){setTimeout(paso,intervalo);}else{el.innerHTML=salida;} return; }
+      } el.innerHTML=salida;
+    } paso();
+  }
+
+  escribirTexto(document.getElementById('narrativeText'),
+    "¡Hoy empieza tu gran aventura, escudero Julen! Vas a cruzar bosques centenarios, pedalear junto al río Arga y cruzar un puente con casi 900 años de historia antes de llegar a las puertas de Pamplona. <strong>¿Preparas tu escudo, joven templario? ¡Vamos a por la primera etapa!</strong>",
+    3000);
+
+  // --- Drawer derecho: punto de interés ---
+  const drawerPunto=document.getElementById('drawerPunto'), backdropPunto=document.getElementById('backdropPunto');
+  const drawerImg=document.getElementById('drawerImg'), drawerTitle=document.getElementById('drawerTitle');
+  const drawerKm=document.getElementById('drawerKm'), drawerText=document.getElementById('drawerText');
+  function abrirDrawerPunto(p){
+    drawerImg.src=JULEN_FULL[p.tipo]; drawerImg.alt=p.tipo;
+    drawerTitle.textContent=p.titulo; drawerKm.textContent=p.km;
+    drawerPunto.classList.add('open'); backdropPunto.classList.add('open');
+    escribirTexto(drawerText, p.texto, 3000);
+  }
+  function cerrarDrawerPunto(){ drawerPunto.classList.remove('open'); backdropPunto.classList.remove('open'); }
+  document.getElementById('closePunto').addEventListener('click', cerrarDrawerPunto);
+  backdropPunto.addEventListener('click', cerrarDrawerPunto);
+
+  // --- Drawer izquierdo: cuaderno del padre ---
+  const drawerPadre=document.getElementById('drawerPadre'), backdropPadre=document.getElementById('backdropPadre');
+  document.getElementById('btnPadre').addEventListener('click',()=>{ drawerPadre.classList.add('open'); backdropPadre.classList.add('open'); });
+  function cerrarDrawerPadre(){ drawerPadre.classList.remove('open'); backdropPadre.classList.remove('open'); }
+  document.getElementById('closePadre').addEventListener('click', cerrarDrawerPadre);
+  backdropPadre.addEventListener('click', cerrarDrawerPadre);
+
+  // --- Camino del héroe: posiciones del casco (% left) ---
+  // índice = número de misiones completadas (0..5)
+  const CASCO_POSICIONES = [3, 10, 27, 44, 61, 78];
+  const caminoCasco = document.getElementById('caminoCasco');
+  function moverCasco(done){ if(caminoCasco) caminoCasco.style.left = CASCO_POSICIONES[done] + '%'; }
+
+  // --- Misiones ---
+  const STORAGE_KEY='etapa01_misiones';
+  const missions=document.querySelectorAll('.mission');
+  const seals=document.querySelectorAll('.seal');
+  const rewardBox=document.getElementById('rewardBox');
+  const total=missions.length;
+
+  function loadState(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY))||{}; }catch(e){ return {}; } }
+  function saveState(state){ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }
+
+  function lanzarConfeti(container){
+    const colores=['#8b2e1a','#d4a520','#e8c040','#6b1f10','#ffffff'];
+    const capa=document.createElement('div'); capa.className='confetti-layer'; container.appendChild(capa);
+    for(let i=0;i<26;i++){
+      const p=document.createElement('span'); p.className='confetti-piece';
+      p.style.left=(Math.random()*100)+'%'; p.style.background=colores[Math.floor(Math.random()*colores.length)];
+      p.style.animationDelay=(Math.random()*0.3)+'s'; p.style.transform='rotate('+Math.floor(Math.random()*360)+'deg)';
+      capa.appendChild(p);
+    }
+    setTimeout(()=>capa.remove(),1600);
+  }
+
+  function render(){
+    const state=loadState(); let done=0;
+    missions.forEach(m=>{
+      const id=m.dataset.mission, isDone=!!state[id];
+      m.classList.toggle('done',isDone);
+      const check=m.querySelector('img.mission-check');
+      if(check) check.src=isDone?'img/check-activo.webp':'img/check-inactivo.webp';
+      if(isDone) done++;
+    });
+    seals.forEach(s=>{
+      const id=s.dataset.mission, tipo=s.dataset.tipo, isDone=!!state[id];
+      s.classList.toggle('unlocked',isDone);
+      const img=s.querySelector('img');
+      if(img) img.src=isDone?`img/sellos/sello-${tipo}-activo.webp`:`img/sellos/sello-${tipo}-inactivo.webp`;
+    });
+    moverCasco(done);
+    return done;
+  }
+
+  let completado=render()===total;
+  if(completado) rewardBox.classList.add('unlocked');
+
+  missions.forEach(m=>{
+    m.addEventListener('click',()=>{
+      const state=loadState(), id=m.dataset.mission;
+      state[id]=!state[id]; saveState(state);
+      const done=render(), ahoraCompleto=done===total;
+      if(ahoraCompleto&&!completado){ rewardBox.classList.add('unlocked'); lanzarConfeti(rewardBox); }
+      else if(!ahoraCompleto){ rewardBox.classList.remove('unlocked'); }
+      completado=ahoraCompleto;
+    });
+  });
+
+</script>
+</body>
+</html>
