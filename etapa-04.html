@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etapa 4 · Logroño → Santo Domingo de la Calzada · Camino Templario</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="page">
+
+  <div class="banner" style="background-image: url('img/etapa-04/etapa-04-cabecera.webp');">
+    <button class="info-badge" id="btnPadre" aria-label="Cuaderno del padre">
+      <img src="img/badge-templarios.png" alt="Información técnica">
+    </button>
+    <p class="eyebrow">Camino Templario · Etapa 4 de 15</p>
+    <h1>Logroño → Santo Domingo</h1>
+    <p class="subtitle">El peregrino legendario y las gallinas de la catedral</p>
+  </div>
+
+  <div class="panel">
+
+    <div class="codice-wrap">
+      <img class="codice-bg" src="img/codice.png" alt="Códice de misiones secretas">
+      <img class="codice-julen" src="img/julen/julen-aventurero.png" alt="Julen Aventurero">
+      <div class="codice-texto">
+        <p id="narrativeText"></p>
+      </div>
+    </div>
+
+    <div class="profile-wrap" id="profileWrap">
+      <svg viewBox="0 0 600 190" id="profileSvg" role="img" xmlns="http://www.w3.org/2000/svg">
+        <title>Perfil de altimetría real de la etapa 4, de Logroño a Santo Domingo de la Calzada</title>
+        <path d="M580.0,149.4 L579.6,149.4 L579.3,149.3 L576.7,148.3 L575.5,147.9 L570.7,148.0 L569.8,147.9 L565.3,147.6 L562.9,148.0 L555.8,147.6 L548.0,146.1 L546.8,145.4 L543.4,143.6 L541.7,144.3 L540.7,144.2 L536.3,143.1 L535.4,143.1 L532.7,142.6 L528.4,141.9 L523.9,142.4 L522.4,141.9 L519.9,142.1 L518.5,141.1 L514.9,140.7 L513.5,139.2 L507.4,132.6 L504.2,129.8 L494.9,130.9 L489.0,131.8 L486.9,132.8 L479.3,137.2 L476.1,137.2 L467.8,134.1 L467.3,133.4 L464.9,131.0 L463.3,129.3 L461.8,130.0 L461.3,130.2 L460.5,129.0 L459.4,128.7 L452.7,130.9 L442.3,127.8 L436.8,124.8 L433.2,122.8 L428.6,120.1 L425.8,118.5 L419.1,117.7 L415.3,119.9 L411.5,119.0 L401.4,115.3 L395.8,112.7 L392.8,111.6 L389.8,110.2 L386.5,108.8 L382.5,107.6 L379.7,109.9 L376.8,108.5 L372.8,108.1 L369.0,106.9 L365.3,103.5 L363.1,101.5 L356.5,108.5 L355.7,109.4 L352.2,110.3 L344.0,111.4 L338.3,114.5 L332.6,117.5 L327.0,117.4 L321.2,119.9 L313.0,124.2 L311.0,124.5 L309.0,125.6 L306.9,126.0 L304.0,126.3 L297.1,126.8 L290.8,128.6 L285.4,130.4 L280.9,131.2 L277.3,133.9 L275.2,134.3 L265.1,134.2 L260.0,134.1 L255.4,130.5 L253.7,128.3 L248.2,121.9 L244.2,123.7 L239.2,128.9 L235.1,126.7 L229.4,123.5 L224.3,122.5 L215.7,122.9 L212.1,123.5 L204.5,123.2 L197.3,122.0 L193.9,122.6 L188.7,124.5 L181.9,122.1 L177.6,120.2 L172.4,120.1 L170.0,122.9 L166.5,122.9 L157.7,121.2 L152.0,120.4 L149.7,120.1 L144.9,119.2 L141.4,118.4 L124.7,112.5 L116.2,103.6 L102.3,91.6 L100.3,90.7 L99.0,90.7 L94.3,89.5 L89.6,89.6 L86.0,88.9 L83.9,90.2 L70.0,92.6 L45.6,105.1 L35.7,106.9 L35.0,107.0 L28.8,106.7 L22.5,106.3 L20.0,106.3" fill="none" stroke="#D85A30" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p class="profile-hint">👆 Toca un punto del camino para descubrir su secreto</p>
+
+    <h2 class="section-title">🛡️ Misiones del héroe</h2>
+
+    <div class="camino-progreso" id="caminoProgreso">
+      <img class="camino-track" src="img/camino-track.png" alt="Sendero">
+      <img class="nodo-hito" style="left:10%" src="img/nodo-hito.png" alt="">
+      <img class="nodo-hito" style="left:27%" src="img/nodo-hito.png" alt="">
+      <img class="nodo-hito" style="left:44%" src="img/nodo-hito.png" alt="">
+      <img class="nodo-hito" style="left:61%" src="img/nodo-hito.png" alt="">
+      <img class="nodo-hito" style="left:78%" src="img/nodo-hito.png" alt="">
+      <img class="camino-trofeo" src="img/barra-trofeo.png" alt="Meta">
+      <img class="camino-casco" id="caminoCasco" src="img/barra-casco.png" alt="Progreso">
+    </div>
+
+    <div class="mission-list" id="missionList">
+      <div class="mission" data-mission="sello-marcelino">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El sello de Marcelino</div>
+          <p>Encuentra la caseta de madera a las afueras de Navarrete y consigue el sello personal del peregrino más famoso del Camino.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="panteon-reyes">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El panteón de los reyes</div>
+          <p>En el monasterio de Nájera localiza las tumbas de los reyes de Navarra y cuenta cuántos reyes están enterrados allí.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="vigia-meseta">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El vigía de la meseta</div>
+          <p>Desde el Alto de Cirueña cuenta cuántos pueblos puedes ver a la vez en el horizonte.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="milagro-gallo">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El milagro del gallo</div>
+          <p>En la catedral de Santo Domingo encuentra la jaula con las gallinas vivas y averigua por qué están ahí.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="constructor-caminos">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El constructor de caminos</div>
+          <p>Busca la tumba de Santo Domingo de la Calzada, el hombre que construyó puentes y calzadas para los peregrinos hace mil años.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reward-box" id="rewardBox">
+      <div class="reward-icon">🏆</div>
+      <div>
+        <h3>Recompensa de la jornada</h3>
+        <p>Las famosas rosquillas de Santo Domingo, un dulce que los peregrinos llevan siglos comiendo al llegar a la ciudad. ¡Y si quieres ver las gallinas de cerca, visita el interior de la catedral!</p>
+      </div>
+    </div>
+
+    <div class="credential-strip">
+      <img class="cofre-bg" src="img/cofre-misiones.png" alt="">
+      <p class="ctitle">Credencial de Templario · Sellos de esta etapa</p>
+      <div class="seal-row" id="sealRow">
+        <div class="seal" data-mission="sello-marcelino" data-tipo="concha">
+          <img src="img/sellos/sello-concha-inactivo.png" alt="Sello Concha">
+        </div>
+        <div class="seal" data-mission="panteon-reyes" data-tipo="castillo">
+          <img src="img/sellos/sello-castillo-inactivo.png" alt="Sello Castillo">
+        </div>
+        <div class="seal" data-mission="vigia-meseta" data-tipo="escudo">
+          <img src="img/sellos/sello-escudo-inactivo.png" alt="Sello Escudo">
+        </div>
+        <div class="seal" data-mission="milagro-gallo" data-tipo="cruz">
+          <img src="img/sellos/sello-cruz-inactivo.png" alt="Sello Cruz">
+        </div>
+        <div class="seal" data-mission="constructor-caminos" data-tipo="espada">
+          <img src="img/sellos/sello-espada-inactivo.png" alt="Sello Espada">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="page-footer">Camino Templario · Roncesvalles — Santiago de Compostela</footer>
+</div>
+
+<!-- DRAWER PADRE -->
+<div class="drawer-backdrop" id="backdropPadre"></div>
+<div class="drawer drawer-left" id="drawerPadre">
+  <button class="drawer-close" id="closePadre">✕</button>
+  <h2 class="section-title">📋 Datos técnicos de la etapa</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><span class="value">51 km</span><span class="label">Distancia</span></div>
+    <div class="stat-card"><span class="value">+600 m</span><span class="label">Desnivel +</span></div>
+    <div class="stat-card"><span class="value">3/5</span><span class="label">Dificultad</span></div>
+  </div>
+  <div class="info-block">
+    Etapa de meseta riojana con perfil relativamente suave. La única subida notable llega en el tramo final hacia el Alto de Cirueña antes de descender a Santo Domingo. El resto es terreno cómodo y paisajísticamente muy bonito.
+  </div>
+  <div class="warning-box">
+    <div class="wtitle">🗺️ Desvío opcional — San Millán de la Cogolla</div>
+    Poco después de Nájera hay una desviación por la <strong>LR-204</strong> que pasa por el monasterio de San Millán de la Cogolla (Patrimonio de la Humanidad, lugar donde nació la lengua castellana escrita) antes de llegar a Cirueña. Culturalmente muy interesante pero añade kilómetros — valorar según tiempo y energía.
+  </div>
+  <h3 class="sub-title">Puntos de paso</h3>
+  <ul class="waypoint-list">
+    <li><span class="waypoint-km">0 km</span> Logroño — salida.</li>
+    <li><span class="waypoint-km">12 km</span> Navarrete — bar, fuente, caseta de Marcelino.</li>
+    <li><span class="waypoint-km">29 km</span> Nájera — bar, fuente, monasterio.</li>
+    <li><span class="waypoint-km">37 km</span> Azofra — bar, fuente.</li>
+    <li><span class="waypoint-km">43 km</span> Alto de Cirueña — punto más alto de la etapa.</li>
+    <li><span class="waypoint-km">51 km</span> Santo Domingo de la Calzada — llegada.</li>
+  </ul>
+  <h3 class="sub-title">Logística del día</h3>
+  <table class="logistics-table">
+    <tr><td>Salida</td><td>Logroño, 8:00 h</td></tr>
+    <tr><td>Llegada prevista</td><td>Santo Domingo, 13:30–14:00 h</td></tr>
+    <tr><td>Avituallamiento</td><td>Navarrete, Nájera y Azofra</td></tr>
+    <tr><td>Tramo exigente</td><td>Km 37–43 (subida a Cirueña)</td></tr>
+    <tr><td>Alojamiento</td><td>Santo Domingo de la Calzada — confirmar guardia de bicis</td></tr>
+  </table>
+</div>
+
+<!-- DRAWER PUNTO DE INTERÉS -->
+<div class="drawer-backdrop" id="backdropPunto"></div>
+<div class="drawer drawer-right" id="drawerPunto">
+  <button class="drawer-close" id="closePunto">✕</button>
+  <div class="drawer-hero">
+    <img id="drawerImg" src="" alt="">
+    <div class="dtitle" id="drawerTitle"></div>
+    <div class="dkm" id="drawerKm"></div>
+  </div>
+  <p class="drawer-text" id="drawerText"></p>
+</div>
+
+<script>
+  const PUNTOS_INTERES = [
+    { id:"navarrete", x:448, y:130, km:"Km 12", titulo:"Navarrete", tipo:"narrador",
+      texto:"Navarrete es famoso por su barro — aquí se hacen algunas de las mejores vasijas y cacharros de La Rioja. Pero guarda otro secreto especial: a las afueras del pueblo hay una caseta de madera donde a veces espera Marcelino, el peregrino más famoso del Camino. Lleva más de cincuenta años recorriendo estas rutas vestido con los ropajes medievales del siglo XII y tiene su propio sello que estampa en las credenciales de los peregrinos que se encuentra.<br><br><strong>Tu misión:</strong> si ves una caseta de madera con un peregrino medieval, acércate y pídele que selle tu credencial templaria. Es uno de los sellos más especiales de todo el Camino, escudero Julen." },
+    { id:"najera", x:261, y:134, km:"Km 29", titulo:"Nájera", tipo:"guardian",
+      texto:"Nájera esconde bajo su monasterio de Santa María la Real uno de los secretos más impresionantes del Camino: el panteón donde están enterrados los reyes de Navarra y Castilla. El monasterio fue fundado en el siglo XI por un rey que persiguiendo un halcón encontró una imagen de la Virgen escondida en una cueva — y decidió construir ahí mismo un templo.<br><br><strong>Tu misión:</strong> entra al monasterio y cuenta cuántos reyes están enterrados en el panteón. ¿Cuántos siglos de historia caben bajo ese techo, joven templario?" },
+    { id:"cirueña", x:103, y:91, km:"Km 43", titulo:"Alto de Cirueña", tipo:"aventurero",
+      texto:"Has llegado al punto más alto de la etapa. Desde aquí la meseta riojana se abre ante ti como un mapa gigante. En días claros puedes ver kilómetros y kilómetros de viñedos, pueblos blancos y la sierra al fondo. Los peregrinos medievales usaban estos altos para orientarse antes de que existieran mapas ni teléfonos.<br><br><strong>Tu misión:</strong> cuenta cuántos pueblos distintos puedes ver desde aquí en el horizonte. Eres el vigía del Camino, escudero Julen." },
+    { id:"santo-domingo-gallo", x:40, y:107, km:"Km 51", titulo:"La catedral del gallo", tipo:"narrador",
+      texto:"La catedral de Santo Domingo guarda uno de los milagros más famosos del Camino: hace siglos, un joven peregrino fue acusado injustamente de robo y ahorcado. Sus padres lo encontraron vivo, sostenido por el propio Santo Domingo. Corrieron a contárselo al juez, que estaba cenando un gallo asado. El juez dijo: 'Ese chico está tan vivo como este gallo'. Y el gallo se levantó del plato y comenzó a cantar.<br><br><strong>Tu misión:</strong> encuentra la jaula con las gallinas vivas que hay dentro de la catedral. Desde hace siglos siempre hay un gallo y una gallina blancos viviendo allí, en recuerdo de aquel milagro." },
+    { id:"santo-domingo-tumba", x:20, y:106, km:"Km 51", titulo:"Santo Domingo de la Calzada", tipo:"guardian",
+      texto:"Santo Domingo fue un hombre extraordinario: en el siglo XI decidió dedicar su vida a construir puentes, calzadas y albergues para que los peregrinos pudieran pasar sin peligro. Sin él, muchos de los caminos que hoy recorres no existirían. La ciudad que lleva su nombre la construyó él mismo.<br><br><strong>Tu misión:</strong> busca la tumba de Santo Domingo dentro de la catedral. Está enterrado en el mismo lugar donde predicó y trabajó toda su vida. Dale las gracias de parte de todos los peregrinos que han pasado por aquí, escudero." }
+  ];
+
+  const JULEN_FULL = { aventurero:"img/julen/julen-aventurero.png", narrador:"img/julen/julen-narrador.png", guardian:"img/julen/julen-guardian.png" };
+  const JULEN_CARA = { aventurero:"img/julen/julen-aventurero-cara.png", narrador:"img/julen/julen-narrador-cara.png", guardian:"img/julen/julen-guardian-cara.png" };
+
+  const profileWrap = document.getElementById('profileWrap');
+  PUNTOS_INTERES.forEach(p => {
+    const btn = document.createElement('button');
+    btn.className = 'hotspot tipo-' + p.tipo;
+    btn.style.left = (p.x / 600 * 100) + '%';
+    btn.style.top  = (p.y / 190 * 100) + '%';
+    btn.setAttribute('aria-label', p.titulo);
+    btn.innerHTML = '<img src="' + JULEN_CARA[p.tipo] + '" alt="">';
+    btn.addEventListener('click', () => abrirDrawerPunto(p));
+    profileWrap.appendChild(btn);
+  });
+
+  (function dibujarEscalas(){
+    const ns = "http://www.w3.org/2000/svg";
+    const svgEl = document.getElementById('profileSvg');
+    const g = document.createElementNS(ns, 'g');
+    svgEl.insertBefore(g, svgEl.firstChild);
+    const xDeKm  = km  => 580 - (km / 51) * 560;
+    const yDeAlt = alt => 150 - (alt - 380) * (150 - 89) / (650 - 380);
+    const yBase = 165, yTop = 82;
+    for (let km = 5; km < 51; km += 5){
+      const x = xDeKm(km), l = document.createElementNS(ns, 'line');
+      l.setAttribute('x1',x); l.setAttribute('y1',yTop); l.setAttribute('x2',x); l.setAttribute('y2',yBase);
+      l.setAttribute('stroke','#2c241c'); l.setAttribute('stroke-width','0.5'); l.setAttribute('stroke-opacity','0.12');
+      g.appendChild(l);
+    }
+    const axisH = document.createElementNS(ns,'line');
+    axisH.setAttribute('x1',20); axisH.setAttribute('y1',yBase); axisH.setAttribute('x2',580); axisH.setAttribute('y2',yBase);
+    axisH.setAttribute('stroke','#2c241c'); axisH.setAttribute('stroke-width','0.5'); axisH.setAttribute('stroke-opacity','0.2');
+    g.appendChild(axisH);
+    [0,10,20,30,40,50].forEach(km => {
+      const x = xDeKm(km);
+      const tick = document.createElementNS(ns,'line');
+      tick.setAttribute('x1',x); tick.setAttribute('y1',yBase); tick.setAttribute('x2',x); tick.setAttribute('y2',yBase+3);
+      tick.setAttribute('stroke','#6b5d4c'); tick.setAttribute('stroke-width','0.7'); g.appendChild(tick);
+      const t = document.createElementNS(ns,'text');
+      t.setAttribute('x',x); t.setAttribute('y',yBase+10); t.setAttribute('text-anchor','middle');
+      t.setAttribute('font-family','Baloo 2, sans-serif'); t.setAttribute('font-size','8'); t.setAttribute('fill','#6b5d4c');
+      t.textContent = km+'km'; g.appendChild(t);
+    });
+    [400,500,600].forEach(alt => {
+      const y = yDeAlt(alt);
+      const tick = document.createElementNS(ns,'line');
+      tick.setAttribute('x1',18); tick.setAttribute('y1',y); tick.setAttribute('x2',20); tick.setAttribute('y2',y);
+      tick.setAttribute('stroke','#6b5d4c'); tick.setAttribute('stroke-width','0.7'); g.appendChild(tick);
+      const t = document.createElementNS(ns,'text');
+      t.setAttribute('x',16); t.setAttribute('y',y+3); t.setAttribute('text-anchor','end');
+      t.setAttribute('font-family','Baloo 2, sans-serif'); t.setAttribute('font-size','7.5'); t.setAttribute('fill','#6b5d4c');
+      t.textContent = alt+'m'; g.appendChild(t);
+    });
+  })();
+
+  function escribirTexto(el, html, duracionMs){
+    const tokens=[], len=html.length; let i=0;
+    while(i<len){ if(html[i]==='<'){const fin=html.indexOf('>',i); tokens.push({tipo:'tag',valor:html.slice(i,fin+1)}); i=fin+1;} else{tokens.push({tipo:'char',valor:html[i]}); i++;} }
+    const totalChars=tokens.filter(t=>t.tipo==='char').length;
+    const intervalo=totalChars>0?duracionMs/totalChars:0;
+    let salida='', idx=0;
+    el.innerHTML='<span class="typing-cursor"></span>';
+    function paso(){
+      while(idx<tokens.length){ const t=tokens[idx]; salida+=t.valor; idx++;
+        if(t.tipo==='char'){ el.innerHTML=salida+'<span class="typing-cursor"></span>'; if(idx<tokens.length){setTimeout(paso,intervalo);}else{el.innerHTML=salida;} return; }
+      } el.innerHTML=salida;
+    } paso();
+  }
+
+  escribirTexto(document.getElementById('narrativeText'),
+    "¡Escudero Julen, hoy pedaleas por la gran meseta riojana hacia una de las ciudades más mágicas del Camino! Te espera un peregrino legendario, reyes enterrados bajo piedras milenarias y una catedral con un secreto increíble: ¡tiene gallinas vivas dentro! Un hombre construyó caminos para que los peregrinos como tú pudieran pasar hace mil años. <strong>¿Listo para descubrir sus secretos, joven templario?</strong>",
+    3000);
+
+  const drawerPunto=document.getElementById('drawerPunto'), backdropPunto=document.getElementById('backdropPunto');
+  const drawerImg=document.getElementById('drawerImg'), drawerTitle=document.getElementById('drawerTitle');
+  const drawerKm=document.getElementById('drawerKm'), drawerText=document.getElementById('drawerText');
+  function abrirDrawerPunto(p){ drawerImg.src=JULEN_FULL[p.tipo]; drawerImg.alt=p.tipo; drawerTitle.textContent=p.titulo; drawerKm.textContent=p.km; drawerPunto.classList.add('open'); backdropPunto.classList.add('open'); escribirTexto(drawerText, p.texto, 3000); }
+  function cerrarDrawerPunto(){ drawerPunto.classList.remove('open'); backdropPunto.classList.remove('open'); }
+  document.getElementById('closePunto').addEventListener('click', cerrarDrawerPunto);
+  backdropPunto.addEventListener('click', cerrarDrawerPunto);
+
+  const drawerPadre=document.getElementById('drawerPadre'), backdropPadre=document.getElementById('backdropPadre');
+  document.getElementById('btnPadre').addEventListener('click',()=>{ drawerPadre.classList.add('open'); backdropPadre.classList.add('open'); });
+  function cerrarDrawerPadre(){ drawerPadre.classList.remove('open'); backdropPadre.classList.remove('open'); }
+  document.getElementById('closePadre').addEventListener('click', cerrarDrawerPadre);
+  backdropPadre.addEventListener('click', cerrarDrawerPadre);
+
+  const CASCO_POSICIONES = [10, 10, 27, 44, 61, 88];
+  const caminoCasco = document.getElementById('caminoCasco');
+  function moverCasco(done){ if(caminoCasco) caminoCasco.style.left = CASCO_POSICIONES[done] + '%'; }
+
+  const STORAGE_KEY='etapa04_misiones';
+  const missions=document.querySelectorAll('.mission');
+  const seals=document.querySelectorAll('.seal');
+  const rewardBox=document.getElementById('rewardBox');
+  const total=missions.length;
+
+  function loadState(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY))||{}; }catch(e){ return {}; } }
+  function saveState(state){ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }
+
+  function lanzarConfeti(container){
+    const colores=['#8b2e1a','#d4a520','#e8c040','#6b1f10','#ffffff'];
+    const capa=document.createElement('div'); capa.className='confetti-layer'; container.appendChild(capa);
+    for(let i=0;i<26;i++){
+      const p=document.createElement('span'); p.className='confetti-piece';
+      p.style.left=(Math.random()*100)+'%'; p.style.background=colores[Math.floor(Math.random()*colores.length)];
+      p.style.animationDelay=(Math.random()*0.3)+'s'; p.style.transform='rotate('+Math.floor(Math.random()*360)+'deg)';
+      capa.appendChild(p);
+    } setTimeout(()=>capa.remove(),1600);
+  }
+
+  function render(){
+    const state=loadState(); let done=0;
+    missions.forEach(m=>{
+      const id=m.dataset.mission, isDone=!!state[id];
+      m.classList.toggle('done',isDone);
+      const check=m.querySelector('img.mission-check');
+      if(check) check.src=isDone?'img/check-activo.png':'img/check-inactivo.png';
+      if(isDone) done++;
+    });
+    seals.forEach(s=>{
+      const id=s.dataset.mission, tipo=s.dataset.tipo, isDone=!!state[id];
+      s.classList.toggle('unlocked',isDone);
+      const img=s.querySelector('img');
+      if(img) img.src=isDone?`img/sellos/sello-${tipo}-activo.png`:`img/sellos/sello-${tipo}-inactivo.png`;
+    });
+    moverCasco(done); return done;
+  }
+
+  let completado=render()===total;
+  if(completado) rewardBox.classList.add('unlocked');
+  missions.forEach(m=>{
+    m.addEventListener('click',()=>{
+      const state=loadState(), id=m.dataset.mission;
+      state[id]=!state[id]; saveState(state);
+      const done=render(), ahoraCompleto=done===total;
+      if(ahoraCompleto&&!completado){ rewardBox.classList.add('unlocked'); lanzarConfeti(rewardBox); }
+      else if(!ahoraCompleto){ rewardBox.classList.remove('unlocked'); }
+      completado=ahoraCompleto;
+    });
+  });
+</script>
+</body>
+</html>
