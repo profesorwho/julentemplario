@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etapa 5 · Santo Domingo → Burgos · Camino Templario</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="page">
+
+  <div class="banner" style="background-image: url('img/etapa-05/etapa-05-cabecera.webp');">
+    <button class="info-badge" id="btnPadre" aria-label="Cuaderno del padre">
+      <img src="img/badge-templarios.png" alt="Información técnica">
+    </button>
+    <p class="eyebrow">Camino Templario · Etapa 5 de 15</p>
+    <h1>Santo Domingo → Burgos</h1>
+    <p class="subtitle">El bosque maldito y el abuelo de la humanidad</p>
+  </div>
+
+  <div class="panel">
+
+    <div class="codice-wrap">
+      <img class="codice-bg" src="img/codice.png" alt="Códice de misiones secretas">
+      <img class="codice-julen" src="img/julen/julen-aventurero.png" alt="Julen Aventurero">
+      <div class="codice-texto">
+        <p id="narrativeText"></p>
+      </div>
+    </div>
+
+    <div class="profile-wrap" id="profileWrap">
+      <svg viewBox="0 0 600 190" id="profileSvg" role="img" xmlns="http://www.w3.org/2000/svg">
+        <title>Perfil de altimetría real de la etapa 5, de Santo Domingo a Burgos</title>
+        <path d="M580.0,137.5 L578.9,137.7 L575.5,137.4 L574.5,138.2 L571.8,138.1 L567.5,139.6 L561.5,138.9 L557.6,137.3 L549.9,133.1 L545.0,134.2 L537.8,129.7 L536.8,128.7 L532.1,124.2 L529.6,122.8 L527.6,121.2 L525.5,126.7 L522.1,128.9 L518.9,125.7 L512.1,121.7 L505.5,122.7 L501.7,121.2 L499.4,120.3 L495.1,118.1 L488.8,115.7 L485.7,116.5 L480.9,116.6 L476.5,112.3 L474.2,111.3 L471.6,109.4 L468.8,110.7 L466.6,113.7 L463.5,117.4 L452.6,113.1 L450.8,111.6 L446.9,113.1 L444.8,111.9 L416.5,110.6 L412.6,113.0 L410.1,115.1 L408.6,116.0 L405.3,116.9 L400.4,116.9 L395.0,115.5 L389.8,113.0 L383.7,111.4 L377.5,109.4 L370.7,106.9 L368.4,103.5 L358.6,99.8 L356.0,100.0 L353.8,99.1 L347.5,96.3 L346.5,94.9 L343.9,93.3 L341.5,94.5 L336.4,87.4 L325.5,87.6 L321.0,86.4 L318.4,86.3 L316.2,83.2 L314.7,78.0 L311.5,72.1 L306.7,61.0 L304.8,59.1 L302.9,55.2 L298.6,50.7 L294.1,47.7 L288.9,47.5 L284.2,52.6 L279.2,48.2 L273.2,47.9 L269.1,49.3 L265.3,50.9 L262.5,51.8 L251.7,58.0 L239.9,63.6 L235.4,66.1 L231.0,71.3 L225.5,73.8 L223.5,74.3 L219.6,73.4 L213.8,72.6 L210.0,73.7 L205.0,75.0 L202.3,75.1 L199.7,76.8 L195.9,81.3 L194.5,80.9 L191.3,83.8 L190.5,83.8 L177.4,82.9 L172.3,83.1 L167.5,78.6 L164.6,71.8 L161.4,65.2 L159.8,63.7 L157.0,60.6 L149.9,72.8 L144.3,76.2 L141.6,78.5 L139.3,81.7 L137.1,85.1 L134.5,86.2 L129.8,87.7 L124.8,88.9 L123.5,89.2 L119.2,89.8 L114.5,90.6 L111.1,91.0 L106.8,91.8 L104.0,90.9 L100.5,91.9 L98.4,92.3 L96.2,93.1 L90.8,93.1 L88.0,93.6 L86.6,93.0 L83.0,94.0 L79.2,94.3 L75.7,94.8 L70.4,95.9 L62.5,96.2 L54.1,97.1 L49.8,97.7 L44.8,98.7 L37.2,99.3 L30.7,99.6 L22.6,100.4 L20.0,100.1" fill="none" stroke="#D85A30" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p class="profile-hint">👆 Toca un punto del camino para descubrir su secreto</p>
+
+    <h2 class="section-title">🛡️ Misiones del héroe</h2>
+
+    <div class="camino-progreso" id="caminoProgreso">
+      <img class="camino-track" src="img/camino-track.png" alt="Sendero">
+      <img class="nodo-hito" style="left:10%" src="img/nodo-hito.png" alt="">
+      <img class="nodo-hito" style="left:27%" src="img/nodo-hito.png" alt="">
+      <img class="nodo-hito" style="left:44%" src="img/nodo-hito.png" alt="">
+      <img class="nodo-hito" style="left:61%" src="img/nodo-hito.png" alt="">
+      <img class="nodo-hito" style="left:78%" src="img/nodo-hito.png" alt="">
+      <img class="camino-trofeo" src="img/barra-trofeo.png" alt="Meta">
+      <img class="camino-casco" id="caminoCasco" src="img/barra-casco.png" alt="Progreso">
+    </div>
+
+    <div class="mission-list" id="missionList">
+      <div class="mission" data-mission="castillo-belorado">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El castillo de Belorado</div>
+          <p>Sube hasta las ruinas del castillo y cuenta las cuevas excavadas en la roca bajo sus muros.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="bosque-maldito">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">Cruzar el bosque maldito</div>
+          <p>Atraviesa los Montes de Oca sin parar. Los peregrinos medievales le tenían terror por los bandidos y los lobos.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="milagro-luz">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El milagro de la luz</div>
+          <p>En San Juan de Ortega encuentra el capitel donde un rayo de sol ilumina la Anunciación en los equinoccios.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="abuelo-humanidad">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El abuelo de la humanidad</div>
+          <p>En Atapuerca busca la señal del yacimiento donde se encontraron restos humanos de hace 800.000 años.</p>
+        </div>
+      </div>
+      <div class="mission" data-mission="cid-burgos">
+        <img class="mission-bg" src="img/tarjeta-mision.png" alt="">
+        <img class="mission-check" src="img/check-inactivo.png" alt="">
+        <div class="mission-text">
+          <div class="mtitle">El Cid conquista Burgos</div>
+          <p>Encuentra la estatua del Cid Campeador en Burgos y hazte una foto con el héroe más famoso de Castilla.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reward-box" id="rewardBox">
+      <div class="reward-icon">🏆</div>
+      <div>
+        <h3>Recompensa de la jornada</h3>
+        <p>Las famosas pastas de mantequilla de Burgos, uno de los dulces más conocidos del Camino. ¡Y si hay energía, el interior de la catedral gótica es imprescindible!</p>
+      </div>
+    </div>
+
+    <div class="credential-strip">
+      <img class="cofre-bg" src="img/cofre-misiones.png" alt="">
+      <p class="ctitle">Credencial de Templario · Sellos de esta etapa</p>
+      <div class="seal-row" id="sealRow">
+        <div class="seal" data-mission="castillo-belorado" data-tipo="castillo">
+          <img src="img/sellos/sello-castillo-inactivo.png" alt="Sello Castillo">
+        </div>
+        <div class="seal" data-mission="bosque-maldito" data-tipo="escudo">
+          <img src="img/sellos/sello-escudo-inactivo.png" alt="Sello Escudo">
+        </div>
+        <div class="seal" data-mission="milagro-luz" data-tipo="cruz">
+          <img src="img/sellos/sello-cruz-inactivo.png" alt="Sello Cruz">
+        </div>
+        <div class="seal" data-mission="abuelo-humanidad" data-tipo="concha">
+          <img src="img/sellos/sello-concha-inactivo.png" alt="Sello Concha">
+        </div>
+        <div class="seal" data-mission="cid-burgos" data-tipo="espada">
+          <img src="img/sellos/sello-espada-inactivo.png" alt="Sello Espada">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="page-footer">Camino Templario · Roncesvalles — Santiago de Compostela</footer>
+</div>
+
+<!-- DRAWER PADRE -->
+<div class="drawer-backdrop" id="backdropPadre"></div>
+<div class="drawer drawer-left" id="drawerPadre">
+  <button class="drawer-close" id="closePadre">✕</button>
+  <h2 class="section-title">📋 Datos técnicos de la etapa</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><span class="value">70 km</span><span class="label">Distancia</span></div>
+    <div class="stat-card"><span class="value">+900 m</span><span class="label">Desnivel +</span></div>
+    <div class="stat-card"><span class="value">4/5</span><span class="label">Dificultad</span></div>
+  </div>
+  <div class="info-block">
+    La etapa más larga del viaje. Perfil exigente con subida prolongada a los Montes de Oca y tramos técnicos tras San Juan de Ortega y en Atapuerca. Prever más tiempo que en otras etapas — salida puntual a las 8:00 es especialmente importante hoy.
+  </div>
+  <div class="warning-box">
+    <div class="wtitle">⚠️ Avisos técnicos</div>
+    <strong>Villafranca Montes de Oca:</strong> tomar la variante verde por carretera para la subida — el camino original es impracticable en bici con niño.<br><br>
+    <strong>San Juan de Ortega → Agés:</strong> tramo roto con piedra suelta y escalones — precaución.<br><br>
+    <strong>Atapuerca:</strong> tramos pedregosos y escalones a la salida del pueblo.
+  </div>
+  <h3 class="sub-title">Puntos de paso</h3>
+  <ul class="waypoint-list">
+    <li><span class="waypoint-km">0 km</span> Santo Domingo de la Calzada — salida.</li>
+    <li><span class="waypoint-km">22 km</span> Belorado — bar, fuente, castillo con cuevas.</li>
+    <li><span class="waypoint-km">32 km</span> Villafranca Montes de Oca — bar, fuente. Subir por variante verde.</li>
+    <li><span class="waypoint-km">38 km</span> Puerto de la Pedraja — ~1150m, punto más alto.</li>
+    <li><span class="waypoint-km">44 km</span> San Juan de Ortega — bar, fuente, monasterio.</li>
+    <li><span class="waypoint-km">50 km</span> Atapuerca — bar, fuente. Tramo pedregoso a la salida.</li>
+    <li><span class="waypoint-km">70 km</span> Burgos — llegada al centro histórico.</li>
+  </ul>
+  <h3 class="sub-title">Logística del día</h3>
+  <table class="logistics-table">
+    <tr><td>Salida</td><td>Santo Domingo, 8:00 h</td></tr>
+    <tr><td>Llegada prevista</td><td>Burgos, 14:30–15:00 h</td></tr>
+    <tr><td>Avituallamiento</td><td>Belorado, Villafranca, San Juan de Ortega y Atapuerca</td></tr>
+    <tr><td>Tramos exigentes</td><td>Km 32–38 (Montes de Oca), km 44–50 (piedra suelta)</td></tr>
+    <tr><td>Alojamiento</td><td>Burgos — confirmar guardia de bicis</td></tr>
+  </table>
+</div>
+
+<!-- DRAWER PUNTO DE INTERÉS -->
+<div class="drawer-backdrop" id="backdropPunto"></div>
+<div class="drawer drawer-right" id="drawerPunto">
+  <button class="drawer-close" id="closePunto">✕</button>
+  <div class="drawer-hero">
+    <img id="drawerImg" src="" alt="">
+    <div class="dtitle" id="drawerTitle"></div>
+    <div class="dkm" id="drawerKm"></div>
+  </div>
+  <p class="drawer-text" id="drawerText"></p>
+</div>
+
+<script>
+  const PUNTOS_INTERES = [
+    { id:"belorado", x:404, y:117, km:"Km 22", titulo:"Belorado", tipo:"guardian",
+      texto:"Belorado es una villa medieval que lleva mil años recibiendo peregrinos. Su castillo, en lo alto del pueblo, tiene algo curioso: bajo sus muros hay cuevas excavadas directamente en la roca donde vivían ermitaños y se escondían los vecinos cuando llegaban los enemigos. Desde ahí arriba se ve todo el valle.<br><br><strong>Tu misión:</strong> sube hasta las ruinas del castillo y cuenta las cuevas que hay excavadas en la roca. ¿Cuántas personas caben en todas ellas juntas, escudero?" },
+    { id:"villafranca", x:324, y:88, km:"Km 32", titulo:"Villafranca Montes de Oca", tipo:"narrador",
+      texto:"Este pequeño pueblo era en la Edad Media la última parada antes del bosque más peligroso del Camino. Los Montes de Oca estaban llenos de bandidos, lobos y peregrinos que se perdían y nunca llegaban a Santiago. Los que sobrevivían decían que era como cruzar el infierno. Hoy es un bosque de pinos precioso... pero muy solitario.<br><br><strong>Tu misión:</strong> cruza los Montes de Oca sin parar. Cada vez que quieras rendirte piensa en los peregrinos medievales que lo hacían a pie, de noche y con lobos. Tú lo tienes fácil, joven templario." },
+    { id:"puerto-pedraja", x:276, y:48, km:"Km 38", titulo:"Puerto de la Pedraja", tipo:"aventurero",
+      texto:"¡Has llegado al punto más alto de toda la etapa, a 1150 metros! Desde aquí el bosque de los Montes de Oca se extiende en todas direcciones. Los peregrinos medievales que llegaban hasta aquí sanos y salvos se arrodillaban y daban gracias — habían sobrevivido al bosque maldito.<br><br>A partir de aquí empieza el descenso hacia Burgos. Lo peor ha pasado, escudero Julen. ¡Respira hondo y disfruta de las vistas!" },
+    { id:"san-juan-ortega", x:228, y:74, km:"Km 44", titulo:"San Juan de Ortega", tipo:"guardian",
+      texto:"En mitad del bosque, donde no hay nada, aparece un monasterio románico del siglo XII. Lo construyó San Juan de Ortega, discípulo de Santo Domingo, para dar cobijo a los peregrinos perdidos en los Montes de Oca. Y guarda un secreto astronómico: dos veces al año, en los equinoccios de primavera y otoño, un rayo de sol entra por una ventana e ilumina exactamente la escena de la Anunciación tallada en un capitel.<br><br><strong>Tu misión:</strong> entra al monasterio y encuentra ese capitel especial. Imagina a los monjes del siglo XII calculando esa maravilla sin ordenadores ni calculadoras, escudero." },
+    { id:"atapuerca", x:180, y:83, km:"Km 50", titulo:"Atapuerca", tipo:"narrador",
+      texto:"Justo aquí, bajo tus ruedas, está uno de los lugares más importantes de la historia de la humanidad. En las cuevas de Atapuerca se encontraron los restos humanos más antiguos de Europa — personas que vivieron hace más de 800.000 años, mucho antes de los egipcios, los romanos o los templarios. Se llaman Homo antecessor y son nuestros abuelos más lejanos.<br><br><strong>Tu misión:</strong> busca la señal que indica el yacimiento y lee la fecha. 800.000 años. ¿Puedes imaginarte ese número, joven templario?" },
+    { id:"burgos", x:20, y:100, km:"Km 70", titulo:"Burgos", tipo:"guardian",
+      texto:"¡Lo has conseguido, escudero Julen! Burgos fue la capital del reino de Castilla y la ciudad del Cid Campeador, el guerrero más famoso de la historia española. Su catedral gótica tardó trescientos años en construirse y es tan grande que caben varios edificios dentro. En una de sus capillas está enterrado el propio Cid con su esposa Jimena.<br><br><strong>Tu misión:</strong> encuentra la estatua del Cid Campeador en la ciudad y hazte una foto con él. ¡Has completado la etapa más larga del viaje, héroe!" }
+  ];
+
+  const JULEN_FULL = { aventurero:"img/julen/julen-aventurero.png", narrador:"img/julen/julen-narrador.png", guardian:"img/julen/julen-guardian.png" };
+  const JULEN_CARA = { aventurero:"img/julen/julen-aventurero-cara.png", narrador:"img/julen/julen-narrador-cara.png", guardian:"img/julen/julen-guardian-cara.png" };
+
+  const profileWrap = document.getElementById('profileWrap');
+  PUNTOS_INTERES.forEach(p => {
+    const btn = document.createElement('button');
+    btn.className = 'hotspot tipo-' + p.tipo;
+    btn.style.left = (p.x / 600 * 100) + '%';
+    btn.style.top  = (p.y / 190 * 100) + '%';
+    btn.setAttribute('aria-label', p.titulo);
+    btn.innerHTML = '<img src="' + JULEN_CARA[p.tipo] + '" alt="">';
+    btn.addEventListener('click', () => abrirDrawerPunto(p));
+    profileWrap.appendChild(btn);
+  });
+
+  (function dibujarEscalas(){
+    const ns = "http://www.w3.org/2000/svg";
+    const svgEl = document.getElementById('profileSvg');
+    const g = document.createElementNS(ns, 'g');
+    svgEl.insertBefore(g, svgEl.firstChild);
+    const xDeKm  = km  => 580 - (km / 70) * 560;
+    const yDeAlt = alt => 150 - (alt - 620) * (150 - 47) / (1150 - 620);
+    const yBase = 165, yTop = 40;
+    for (let km = 10; km < 70; km += 10){
+      const x = xDeKm(km), l = document.createElementNS(ns, 'line');
+      l.setAttribute('x1',x); l.setAttribute('y1',yTop); l.setAttribute('x2',x); l.setAttribute('y2',yBase);
+      l.setAttribute('stroke','#2c241c'); l.setAttribute('stroke-width','0.5'); l.setAttribute('stroke-opacity','0.12');
+      g.appendChild(l);
+    }
+    const axisH = document.createElementNS(ns,'line');
+    axisH.setAttribute('x1',20); axisH.setAttribute('y1',yBase); axisH.setAttribute('x2',580); axisH.setAttribute('y2',yBase);
+    axisH.setAttribute('stroke','#2c241c'); axisH.setAttribute('stroke-width','0.5'); axisH.setAttribute('stroke-opacity','0.2');
+    g.appendChild(axisH);
+    [0,10,20,30,40,50,60,70].forEach(km => {
+      const x = xDeKm(km);
+      const tick = document.createElementNS(ns,'line');
+      tick.setAttribute('x1',x); tick.setAttribute('y1',yBase); tick.setAttribute('x2',x); tick.setAttribute('y2',yBase+3);
+      tick.setAttribute('stroke','#6b5d4c'); tick.setAttribute('stroke-width','0.7'); g.appendChild(tick);
+      const t = document.createElementNS(ns,'text');
+      t.setAttribute('x',x); t.setAttribute('y',yBase+10); t.setAttribute('text-anchor','middle');
+      t.setAttribute('font-family','Baloo 2, sans-serif'); t.setAttribute('font-size','8'); t.setAttribute('fill','#6b5d4c');
+      t.textContent = km+'km'; g.appendChild(t);
+    });
+    [700,800,900,1000,1100].forEach(alt => {
+      const y = yDeAlt(alt);
+      const tick = document.createElementNS(ns,'line');
+      tick.setAttribute('x1',18); tick.setAttribute('y1',y); tick.setAttribute('x2',20); tick.setAttribute('y2',y);
+      tick.setAttribute('stroke','#6b5d4c'); tick.setAttribute('stroke-width','0.7'); g.appendChild(tick);
+      const t = document.createElementNS(ns,'text');
+      t.setAttribute('x',16); t.setAttribute('y',y+3); t.setAttribute('text-anchor','end');
+      t.setAttribute('font-family','Baloo 2, sans-serif'); t.setAttribute('font-size','7.5'); t.setAttribute('fill','#6b5d4c');
+      t.textContent = alt+'m'; g.appendChild(t);
+    });
+  })();
+
+  function escribirTexto(el, html, duracionMs){
+    const tokens=[], len=html.length; let i=0;
+    while(i<len){ if(html[i]==='<'){const fin=html.indexOf('>',i); tokens.push({tipo:'tag',valor:html.slice(i,fin+1)}); i=fin+1;} else{tokens.push({tipo:'char',valor:html[i]}); i++;} }
+    const totalChars=tokens.filter(t=>t.tipo==='char').length;
+    const intervalo=totalChars>0?duracionMs/totalChars:0;
+    let salida='', idx=0;
+    el.innerHTML='<span class="typing-cursor"></span>';
+    function paso(){
+      while(idx<tokens.length){ const t=tokens[idx]; salida+=t.valor; idx++;
+        if(t.tipo==='char'){ el.innerHTML=salida+'<span class="typing-cursor"></span>'; if(idx<tokens.length){setTimeout(paso,intervalo);}else{el.innerHTML=salida;} return; }
+      } el.innerHTML=salida;
+    } paso();
+  }
+
+  escribirTexto(document.getElementById('narrativeText'),
+    "¡Escudero Julen, hoy te espera la etapa más épica hasta ahora! Setenta kilómetros que te llevarán desde La Rioja hasta el corazón de Castilla. Cruzarás el bosque más temido del Camino medieval, llegarás al techo de la meseta y al final te recibirá una de las ciudades más grandes e históricas del Camino. <strong>Prepara las piernas y el escudo, joven templario — hoy el Camino te pone a prueba de verdad!</strong>",
+    3000);
+
+  const drawerPunto=document.getElementById('drawerPunto'), backdropPunto=document.getElementById('backdropPunto');
+  const drawerImg=document.getElementById('drawerImg'), drawerTitle=document.getElementById('drawerTitle');
+  const drawerKm=document.getElementById('drawerKm'), drawerText=document.getElementById('drawerText');
+  function abrirDrawerPunto(p){ drawerImg.src=JULEN_FULL[p.tipo]; drawerImg.alt=p.tipo; drawerTitle.textContent=p.titulo; drawerKm.textContent=p.km; drawerPunto.classList.add('open'); backdropPunto.classList.add('open'); escribirTexto(drawerText, p.texto, 3000); }
+  function cerrarDrawerPunto(){ drawerPunto.classList.remove('open'); backdropPunto.classList.remove('open'); }
+  document.getElementById('closePunto').addEventListener('click', cerrarDrawerPunto);
+  backdropPunto.addEventListener('click', cerrarDrawerPunto);
+
+  const drawerPadre=document.getElementById('drawerPadre'), backdropPadre=document.getElementById('backdropPadre');
+  document.getElementById('btnPadre').addEventListener('click',()=>{ drawerPadre.classList.add('open'); backdropPadre.classList.add('open'); });
+  function cerrarDrawerPadre(){ drawerPadre.classList.remove('open'); backdropPadre.classList.remove('open'); }
+  document.getElementById('closePadre').addEventListener('click', cerrarDrawerPadre);
+  backdropPadre.addEventListener('click', cerrarDrawerPadre);
+
+  const CASCO_POSICIONES = [10, 10, 27, 44, 61, 88];
+  const caminoCasco = document.getElementById('caminoCasco');
+  function moverCasco(done){ if(caminoCasco) caminoCasco.style.left = CASCO_POSICIONES[done] + '%'; }
+
+  const STORAGE_KEY='etapa05_misiones';
+  const missions=document.querySelectorAll('.mission');
+  const seals=document.querySelectorAll('.seal');
+  const rewardBox=document.getElementById('rewardBox');
+  const total=missions.length;
+
+  function loadState(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY))||{}; }catch(e){ return {}; } }
+  function saveState(state){ localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); }
+
+  function lanzarConfeti(container){
+    const colores=['#8b2e1a','#d4a520','#e8c040','#6b1f10','#ffffff'];
+    const capa=document.createElement('div'); capa.className='confetti-layer'; container.appendChild(capa);
+    for(let i=0;i<26;i++){
+      const p=document.createElement('span'); p.className='confetti-piece';
+      p.style.left=(Math.random()*100)+'%'; p.style.background=colores[Math.floor(Math.random()*colores.length)];
+      p.style.animationDelay=(Math.random()*0.3)+'s'; p.style.transform='rotate('+Math.floor(Math.random()*360)+'deg)';
+      capa.appendChild(p);
+    } setTimeout(()=>capa.remove(),1600);
+  }
+
+  function render(){
+    const state=loadState(); let done=0;
+    missions.forEach(m=>{
+      const id=m.dataset.mission, isDone=!!state[id];
+      m.classList.toggle('done',isDone);
+      const check=m.querySelector('img.mission-check');
+      if(check) check.src=isDone?'img/check-activo.png':'img/check-inactivo.png';
+      if(isDone) done++;
+    });
+    seals.forEach(s=>{
+      const id=s.dataset.mission, tipo=s.dataset.tipo, isDone=!!state[id];
+      s.classList.toggle('unlocked',isDone);
+      const img=s.querySelector('img');
+      if(img) img.src=isDone?`img/sellos/sello-${tipo}-activo.png`:`img/sellos/sello-${tipo}-inactivo.png`;
+    });
+    moverCasco(done); return done;
+  }
+
+  let completado=render()===total;
+  if(completado) rewardBox.classList.add('unlocked');
+  missions.forEach(m=>{
+    m.addEventListener('click',()=>{
+      const state=loadState(), id=m.dataset.mission;
+      state[id]=!state[id]; saveState(state);
+      const done=render(), ahoraCompleto=done===total;
+      if(ahoraCompleto&&!completado){ rewardBox.classList.add('unlocked'); lanzarConfeti(rewardBox); }
+      else if(!ahoraCompleto){ rewardBox.classList.remove('unlocked'); }
+      completado=ahoraCompleto;
+    });
+  });
+</script>
+</body>
+</html>
